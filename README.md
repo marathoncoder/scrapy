@@ -12,13 +12,15 @@ toDo:
 + 多线程处理
 + 分步式处理
 
+
+
 + <del>自动限束
     - settings 当中有如下设置,调整或开启就可以了:
-    - #AUTOTHROTTLE_ENABLED = True
-    - #AUTOTHROTTLE_START_DELAY = 5
-    - #AUTOTHROTTLE_MAX_DELAY = 60
-    - #AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
-    - #AUTOTHROTTLE_DEBUG = False
+    - AUTOTHROTTLE_ENABLED = True
+    - AUTOTHROTTLE_START_DELAY = 5
+    - AUTOTHROTTLE_MAX_DELAY = 60
+    - AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+    - AUTOTHROTTLE_DEBUG = False
 + <del>ban 处理[settings处理]
     - settings处理cookie  如:COOKIES_ENABLED = False
     - download_delay = 1 设置延迟时间
