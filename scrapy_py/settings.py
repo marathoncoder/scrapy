@@ -14,6 +14,24 @@ BOT_NAME = 'scrapy_py'
 SPIDER_MODULES = ['scrapy_py.spiders']
 NEWSPIDER_MODULE = 'scrapy_py.spiders'
 
+# 为了启用一个Item Pipeline组件，你必须将它的类添加到 ITEM_PIPELINES 配置
+# item按数字从低到高的顺序，通过pipeline，通常将这些数字定义在0-1000范围内
+
+#禁止cookies,防止被ban
+COOKIES_ENABLED = False
+
+# mongoDB 设置
+MONGODB_SERVER = 'localhost'
+MONGODB_PORT = 27017
+MONGODB_DB = 'scrapy'
+MONGODB_COLLECTION = 'scrapys'
+
+ITEM_PIPELINES = {
+    'scrapy_py.pipelines.JsonPipeline': 300,
+    'scrapy_py.pipelines.MongoPipeline': 500
+}
+
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapy_py (+http://www.yourdomain.com)'

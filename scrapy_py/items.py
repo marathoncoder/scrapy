@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Define here the models for your scraped items
-#
-# See documentation in:
-# http://doc.scrapy.org/en/latest/topics/items.html
+# 定义需要抓取的数据
 
-import scrapy
+from scrapy.item import Item, Field
 
-
-class ScrapyPyItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class SimpleItems(Item):
+    article_name = Field()
+    article_url = Field()
