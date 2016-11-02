@@ -3,7 +3,7 @@
 
 url: http://baike.baidu.com/view/3974030.htm
 
-toDo:
+## toDo:
 
 + 深度自动爬取
 + 登录模拟
@@ -13,6 +13,7 @@ toDo:
 + 分步式处理
 
 
+## Done:
 
 + <del>自动限束
     - settings 当中有如下设置,调整或开启就可以了:
