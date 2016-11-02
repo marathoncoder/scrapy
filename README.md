@@ -9,12 +9,17 @@ url: http://baike.baidu.com/view/3974030.htm
 + 登录模拟
 + 验证码模拟
 + ajax爬取
-+ 多线程处理
-+ 分步式处理
+
 
 
 ## Done:
 
++ 启动
+    - scrapy crawl SimpleScrapy
++ <del>多线程处理
+    - REACTOR_THREADPOOL_MAXSIZE = 10 默认进程数是10,可以调整
++ <del>分步式处理
+ - 解决方案:https://github.com/rolando/scrapy-redis
 + <del>自动限束
     - settings 当中有如下设置,调整或开启就可以了:
     - AUTOTHROTTLE_ENABLED = True
