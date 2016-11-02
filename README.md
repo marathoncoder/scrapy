@@ -11,9 +11,14 @@ toDo:
 + ajax爬取
 + 多线程处理
 + 分步式处理
-+ 暂停、重启
-+ 自动限束
 
++ <del>自动限束
+    - settings 当中有如下设置,调整或开启就可以了:
+    - #AUTOTHROTTLE_ENABLED = True
+    - #AUTOTHROTTLE_START_DELAY = 5
+    - #AUTOTHROTTLE_MAX_DELAY = 60
+    - #AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+    - #AUTOTHROTTLE_DEBUG = False
 + <del>ban 处理[settings处理]
     - settings处理cookie  如:COOKIES_ENABLED = False
     - download_delay = 1 设置延迟时间
@@ -26,4 +31,8 @@ toDo:
     - 启运的时候加上即可,如:scrapy crawl SimpleScrapy --set LOG_FILE=log
 + <del>去重
     - 使用 from scrapy.exceptions import DropItem
++ <del>暂停、重启
+    - 通过 JOBDIR 设置 job directory 选项,如scrapy crawl somespider -s JOBDIR=crawls/somespider-1
+    - 关闭 control + C
+    - 重启:再次输入上面的命令 scrapy crawl somespider -s JOBDIR=crawls/somespider-1
 
