@@ -14,14 +14,21 @@ BOT_NAME = 'scrapy_py'
 SPIDER_MODULES = ['scrapy_py.spiders']
 NEWSPIDER_MODULE = 'scrapy_py.spiders'
 
+# 设置下载间隔为250ms
+DOWNLOAD_DELAY = 0.25
+
 #禁止cookies,防止被ban
 COOKIES_ENABLED = False
+
 #禁止重试
 RETRY_ENABLED = False
+
 #减小下载超时
 DOWNLOAD_TIMEOUT = 15
+
 #关闭重定向
 REDIRECT_ENABLED = False
+
 #最大进程数设置,默认 10
 REACTOR_THREADPOOL_MAXSIZE = 15
 

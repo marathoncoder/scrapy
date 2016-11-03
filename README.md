@@ -5,7 +5,6 @@ url: http://baike.baidu.com/view/3974030.htm
 
 ## toDo:
 
-+ 深度自动爬取
 + 登录模拟
 + 验证码模拟
 
@@ -47,4 +46,7 @@ url: http://baike.baidu.com/view/3974030.htm
     - 1.通过抓包工具分析js,ajax的请求，模拟该请求获取js加载后的数据。
     - 2.调用浏览器的内核，获取加载后的网页源码，然后对源码经行解析
 + 运行多个scrapy
++ 深度自动爬取
+    - CrawlSpider 替代scrapy.Spider
+    - CrawlSpider 多了一个Rule可以配置一个符合LinkExtractor提取器规则的正则,与回调
 
