@@ -1,13 +1,9 @@
 # scrapy
 网络爬虫练手项目
 
-url: http://baike.baidu.com/view/3974030.htm
-
 ## toDo:
 
-+ 登录模拟
 + 验证码模拟
-
 
 
 ## Done:
@@ -49,4 +45,6 @@ url: http://baike.baidu.com/view/3974030.htm
 + 深度自动爬取
     - CrawlSpider 替代scrapy.Spider
     - CrawlSpider 多了一个Rule可以配置一个符合LinkExtractor提取器规则的正则,与回调
++ 登录模拟
+    - FormRequest.from_response 模拟提交表单及cookie信息
 
