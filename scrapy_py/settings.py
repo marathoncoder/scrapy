@@ -16,6 +16,14 @@ NEWSPIDER_MODULE = 'scrapy_py.spiders'
 
 #禁止cookies,防止被ban
 COOKIES_ENABLED = False
+#禁止重试
+RETRY_ENABLED = False
+#减小下载超时
+DOWNLOAD_TIMEOUT = 15
+#关闭重定向
+REDIRECT_ENABLED = False
+#最大进程数设置,默认 10
+REACTOR_THREADPOOL_MAXSIZE = 15
 
 # mongoDB 设置
 MONGODB_SERVER = 'localhost'
@@ -35,6 +43,8 @@ ITEM_PIPELINES = {
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
+
+COMMANDS_MODULE = 'scrapy_py.commands'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -103,5 +113,3 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-
-REACTOR_THREADPOOL_MAXSIZE = 15

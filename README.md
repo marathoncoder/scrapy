@@ -8,7 +8,6 @@ url: http://baike.baidu.com/view/3974030.htm
 + 深度自动爬取
 + 登录模拟
 + 验证码模拟
-+ ajax爬取
 
 
 
@@ -43,4 +42,9 @@ url: http://baike.baidu.com/view/3974030.htm
     - 通过 JOBDIR 设置 job directory 选项,如scrapy crawl somespider -s JOBDIR=crawls/somespider-1
     - 关闭 control + C
     - 重启:再次输入上面的命令 scrapy crawl somespider -s JOBDIR=crawls/somespider-1
++ ajax爬取
+    - 对于采集来说的动态网页是那些需要经过js,ajax动态加载来获取数据的网页，采集数据的方案分为两种：
+    - 1.通过抓包工具分析js,ajax的请求，模拟该请求获取js加载后的数据。
+    - 2.调用浏览器的内核，获取加载后的网页源码，然后对源码经行解析
++ 运行多个scrapy
 
